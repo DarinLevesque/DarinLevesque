@@ -40,31 +40,42 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" async></script>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">Darin Levesque</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="index.html">Main</a>
+                    <a class="mdl-navigation__link" href="blog.html">Professional</a>
+                    <a class="mdl-navigation__link" href="about.html">Personal</a>
+                    <a class="typeform-share mdl-navigation__link" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="index.html">Main</a>
+                <a class="mdl-navigation__link" href="blog.html">Professional</a>
+                <a class="mdl-navigation__link" href="about.html">Personal</a>
+                <a class="typeform-share mdl-navigation__link" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            </nav>
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Darin Levesque</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#about" class="mdl-layout__tab is-active">About</a>
-          <a href="#resume" class="mdl-layout__tab">Resume</a>
-          <a href="#projects" class="mdl-layout__tab">Projects</a>
-          <a href="#stories" class="mdl-layout__tab">Stories</a>
-          <a class="typeform-share mdl-layout__tab" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-          <i class="material-icons" role="presentation">add</i>
-          <span class="visuallyhidden">Add</span>
-          </button>
-        </div>
-      </header>
       <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="about">
+      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar">
+          <a href="#about" class="mdl-tabs__tab is-active">About</a>
+          <a href="#resume" class="mdl-tabs__tab">Resume</a>
+          <a href="#projects" class="mdl-tabs__tab">Projects</a>
+        </div>
+        <div class="mdl-tabs__panel is-active" id="about">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
               <i class="material-icons">play_circle_filled</i>
@@ -130,10 +141,10 @@
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <h4>Technology</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+                This site was made with Google's material design, an express backend, and a series of gulp extensions for tying things all together.
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+                <a href="#" class="mdl-button">Learn More</a>
               </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
@@ -162,33 +173,34 @@
             </div>
           </section>
         </div>
-        <div class="mdl-layout__tab-panel" id="resume">
+        <div class="mdl-tabs__panel" id="resume">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4>Features</h4>
               Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
               <ul class="toc">
                 <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
                 <a href="#lorem3">Lorem ipsum</a>
                 <a href="#lorem4">Lorem ipsum</a>
                 <a href="#lorem5">Lorem ipsum</a>
               </ul>
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
+              <h5 id="experience">Experience</h5>
               Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
               <ul>
                 <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
                 <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
                 <li>Lorem labore proident officia excepteur do.</li>
               </ul>
+              <div id="timeline" style="height: 180px;"></div>
               <p>
                 Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
               </p>
               <p>
                 Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
               </p>
-              <p id="lorem2">
+              <p id="education">
                 Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
               </p>
               <p>
@@ -213,7 +225,7 @@
             </div>
           </section>
         </div>
-        <div class="mdl-layout__tab-panel" id="projects">
+        <div class="mdl-tabs__panel" id="projects">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4>Projects</h4>
@@ -284,6 +296,7 @@
             </ul>
           </section>
         </div>
+        </div>
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
@@ -342,6 +355,25 @@
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['timeline']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+          [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
+          [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
+          [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]]);
+
+        chart.draw(dataTable);
+      }
+    </script>
     <!-- endbuild -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
