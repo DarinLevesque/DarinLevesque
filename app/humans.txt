@@ -3,7 +3,7 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  Darin Levesque -- The Subject -- @darinlevesque
 
 # THANKS
 
@@ -11,4 +11,4 @@
 
 # TECHNOLOGY COLOPHON
 
-  HTML5, CSS3
+  HTML5, CSS3, Gulp, Node.js, Express.js, Git, ESlint, Sass, Heroku

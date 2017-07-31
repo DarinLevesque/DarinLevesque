@@ -39,351 +39,865 @@
     -->
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
     <!-- Your styles -->
-    <link rel="stylesheet" href="styles/main.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" async></script>
+    <!-- GOOGLE FONTS -->
+        <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300,400" rel="stylesheet">
+        
+        <!-- FRAMEWORK CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+        <!--<link rel="stylesheet" href="css/lightbox.css">-->
+        
+        <!-- FONT ICONS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        
+        <!-- ADDITIONAL CSS -->
+         <link rel="stylesheet" href="/styles/timeline.css">
+         <link rel="stylesheet" href="/styles/animate.css">
+         <link rel="stylesheet" href="/styles/nav.css">
+         <link rel="stylesheet" href="/styles/jquery.fancybox.css">
+         <!-- <link rel="stylesheet" href="/styles/jquery.modal.css" type="text/css" media="screen" /> -->
+        
+        <!--   COUSTOM CSS link  -->
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/responsive.css">
+        
+        <!--   COLOUR  -->
+        <!-- <link rel="stylesheet" href="/styles/color/lime.css" title="lime">
+        <link rel="stylesheet" href="/styles/color/red.css" title="red">
+        <link rel="stylesheet" href="/styles/color/green.css" title="green">
+        <link rel="stylesheet" href="/styles/color/purple.css" title="purple">
+        <link rel="stylesheet" href="/styles/color/orange.css" title="orange"> -->
+    <!-- <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/style.css"> -->
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Darin Levesque</span>
-                </span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Main</a>
-                    <a class="mdl-navigation__link" href="blog.html">Professional</a>
-                    <a class="mdl-navigation__link" href="about.html">Personal</a>
-                    <a class="typeform-share mdl-navigation__link" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Main</a>
-                <a class="mdl-navigation__link" href="blog.html">Professional</a>
-                <a class="mdl-navigation__link" href="about.html">Personal</a>
-                <a class="typeform-share mdl-navigation__link" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-            </nav>
-        </div>
-      <main class="mdl-layout__content">
-      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-        <div class="mdl-tabs__tab-bar">
-          <a href="#about" class="mdl-tabs__tab is-active">About</a>
-          <a href="#resume" class="mdl-tabs__tab">Resume</a>
-          <a href="#projects" class="mdl-tabs__tab">Projects</a>
-        </div>
-        <div class="mdl-tabs__panel is-active" id="about">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-            <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+  <body>
+      <!-- =========================================
+                           HEADER TOP   
+        ==========================================-->
+        <header id="header-top"> <!--Start: "Header Area"-->
+            <div class="container">
+                <div class="row">
+                    <div class="top-contact col m12 s12 right">
+                        <h4>Darin Levesque</h4>
+                        <span><i class="fa fa-envelope"></i> <a href="mailto:">darin@darinlevesque.com</a></span>
+                        <span><i class="fa fa-phone"></i> <a href="tel:">772-218-1018</a></span> 
+                    </div>  
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+            </div>
+            
+            <!-- =========================================
+                           NAVIGATION   
+            ==========================================-->
+            <div id="header-bottom" class="z-depth-1"> <!--Start: "Header Area"-->
+                <div id="sticky-nav">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="nav-wrap"> 
+                                <ul class="hide-on-med-and-down group"  id="example-one">
+                                    <li class="current_page_item"><a href="#header-top">Home</a></li>
+                                    <li><a href="#about">About</a></li>                                
+                                    <li><a href="#skills">Skills</a></li>                                
+                                    <li><a href="#works">Works</a></li>                                
+                                    <li><a href="#portfolio">Portolio</a></li>                                
+                                    <li><a href="#education">Education</a></li>
+                                    <!-- <li><a href="#blog">Blog</a></li> -->
+                                    <!-- <li><a href="#pricing-table">Pricing</a></li>  -->
+                                    <!-- <li><a href="#clients">Client</a></li> -->
+                                    <li><a href="#contact-form">Contact</a></li>
+                                </ul>
+                                <ul class="side-nav" id="slide-out">
+                                    <li><a href="#header-bottom" class="active">Home</a></li>
+                                    <li><a href="#about">About</a></li>                                
+                                    <li><a href="#skills">Skills</a></li>                                
+                                    <li><a href="#works">Works</a></li>                                
+                                    <li><a href="#portfolio">Portolio</a></li>                                
+                                    <li><a href="#education">Education</a></li>
+                                    <<!-- li><a href="#blog">Blog</a></li> -->
+                                    <!-- <li><a href="#pricing-table">Pricing</a></li> -->
+                                    <!-- <li><a href="#clients">Client</a></li> -->
+                                    <li><a href="#contact-form">Contact</a></li>
+                                </ul>
+                                <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+            </div> <!--End: Header Area-->
+        </header> <!--End: Header Area-->
+        
+        <!-- =========================================
+                        ABOUT   
+        ==========================================-->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="intro z-depth-1 col m12">
+                        <div class="col m12 s12">
+                            <div class="profile-pic wow fadeIn a1" data-wow-delay="0.1s" >
+                                <img src="/images/proflpic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col m12 s12 co-centered wow fadeIn a2" data-wow-delay="0.2s">
+                            <div class="intro-content col m10 s12">
+                                <h2>Darin Levesque</h2>
+                                <span>Test Resource Manager</span>
+                                <p>Hello, I'm Darin Levesque. I work for the CH-53K Developmental Helicopter program as a Test Resource Manager. </p>
+                                <a href="Resume.docx" class="btn waves-effect">Download CV</a>
+                                <a class="typeform-share btn btn-success waves-effect" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+        </section>
+        
+        <!-- =========================================
+                           SKILLS   
+        ==========================================-->
+        <section id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2> <i class="fa fa-gears"></i>Skills</h2>
+                    </div>
+                    <div class="skill-line z-depth-1">
+                        <div class="row">
+                            <div class="col m6 s12">
+                                <div class="col m2 skill-icon">
+                                    <i class="fa fa-calendar-o"></i>
+                                </div>
+                                <div class="skill-bar col m10 wow fadeIn a1"  data-wow-delay="0.1s">
+                                    <h3>Professional Skills </h3>
+                                    <span>Program Management</span>                                    
+                                    <div class="progress">
+                                        <div class="determinate"> 70% </div>
+                                    </div>
+                                    
+                                    <span>Technical Processes</span>
+                                    <div class="progress">
+                                        <div class="determinate"> 94%</div>
+                                    </div>
+                                    
+                                    <span>Web Development</span>
+                                    <div class="progress">
+                                        <div class="determinate">77%</div>
+                                    </div>
+    
+                                    <span>Javascript</span>
+                                    <div class="progress">
+                                        <div class="determinate">72%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col m6 s12">
+                                <div class="col m2 skill-icon">
+                                    <i class="fa fa-calendar-o"></i>
+                                </div>
+                                <div class="skill-bar col m10 wow fadeIn a2" data-wow-delay="0.2s">
+                                    <h3>Personal Skills </h3>
+                                    <span>Communication</span>                                    
+                                    <div class="progress">
+                                        <div class="determinate"> 86% </div>
+                                    </div>
+                                    
+                                    <span>Team Work</span>
+                                    <div class="progress">
+                                        <div class="determinate"> 95%</div>
+                                    </div>
+                                    
+                                    <span>Creativity</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+    
+                                    <span>Dedication</span>
+                                    <div class="progress">
+                                        <div class="determinate">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+            </div>
+        </section>
+        
+        <!-- ========================================
+                WORKS EXPERIENCE  
+        ==========================================-->
+        
+        <section id="works">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2> <i class="fa fa-suitcase"> </i>Work Experience</h2>
+                    </div>
+                    <div id="cd-timeline" class="cd-container">
+                        <div class="cd-timeline-block wow fadeIn a2" data-wow-delay="0.2s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>TEST RESOURCE MANAGER</h2></a>
+                                <h6>NAVAIR 5.1.1D</h6>
+                                <span>30 Sept 2015 - Present </span>
+                                <p>Create and maintain test metrics for the CH-53K Integrated Test Team. Interface with both leadership and engineering teams to ensure quality data for executive consumption enabling data-driven decisions.</p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                        <div class="cd-timeline-block wow fadeIn a3" data-wow-delay="0.3s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>PHOTOGRAPHER & WEB DEVELOPER</h2></a>
+                                <h6>PKC Photography & Solutions</h6>
+                                <span>25 Dec 2013 - Present </span>
+                                <p>Shot PGA Village's 20th anniversary event, is the official photographer for Tradition Living Magazine and more.</p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                
+                        <div class="cd-timeline-block wow fadeIn a4" data-wow-delay="0.4s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>DEVELOPMENTAL FLIGHT TEST COORDINATOR</h2></a>
+                                <h6>Jahn Corporation</h6>
+                                <span>20 February 2014 - 30 Sept 2015 </span>
+                                <p>Planned, coordinated, monitored and reported CH-53K test execution data to populate NAVAIR standard metrics presentations for program schedule tracking of ground and fight test activities. Coordinated with ITT Leadership to develop and refne CH-53K specifc metrics.</p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                        <div class="cd-timeline-block wow fadeIn a5" data-wow-delay="0.5s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>MARINE CORPS CREWCHIEF</h2></a>
+                                <h6>United States Marine Corps</h6>
+                                <span>25 Jan 2004 - 26 Feb 2014</span>
+                                <p>Subject Matter Expert on MV-22 Osprey aircraft including two years with developmental test. </p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                    </div> <!-- cd-timeline -->
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+            </div>
+        </section>
+        
+        <!-- =========================================
+                    PORTFOLIO   
+        ==========================================-->
+        
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2><i class="fa fa-th-list"></i>Portfolio</h2>
+                    </div>
+                    <div class="col m12 s12 portfolio-nav">
+                        <ul>
+                            <li class="filter" data-filter="all">Show All</li>
+                            <li class="filter" data-filter=".category-1">Photography</li>
+                            <li class="filter" data-filter=".category-2">Web</li>
+                            <li class="filter" data-filter=".category-3">Video</li>
+                            <li class="filter" data-filter=".category-4">Upcoming</li>
+                        </ul>
+                    </div>
+                    <div id="loader">
+                        <div class="loader-icon"></div>
+                    </div>
+                    <div class="screenshots" id="portfolio-item" >
+                        <div class="row">
+                            <ul class="grid">
+                                <!-- Portfolio one-->
+                                <li class="col m3 s12 mix category-3">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-one">
+                                        <figure class="more">
+                                        <iframe width="244" height="265" src="https://www.youtube.com/embed/Z7juF7EG9WY" frameborder="0" allowfullscreen></iframe>
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>We Must be Crazy</h2>
+                                                        <p>Our announcement regarding our new addition coming this fall!</p>
+                                                    </div>                          
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio two-->
+                                <li class="col m3 s12 mix category-2">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-two">
+                                        <figure class="more">
+                                            <img src="/images/p-2.png" alt="Screenshot 01">
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>PKC Photography</h2>
+                                                        <p>Making people look dapper.</p>
+                                                    </div>              
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio three-->
+                                <li class="col m3 s12 mix category-2">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-three">
+                                        <figure class="more">
+                                        <img src="/images/p-3.png" alt="Screenshot 01">
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>Gratus Housing Advocates Inc.</h2>
+                                                        <p>Fighting housing discrimination for veterans because they fought for us.</p>
+                                                    </div>                              
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio four-->
+                                <li class="col m3 s12 mix category-1">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-four">
+                                        <figure class="more">
+                                        <img src="/images/p-4.jpg" alt="Screenshot 01">
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>Month 2 Month</h2>
+                                                        <p>12 months of memories during the first year of life.</p>
+                                                    </div>  
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio five-->
+                                <li class="col m3 s12 mix category-2">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-five">
+                                        <figure class="more">
+                                        <img src="/images/p-5.jpg" alt="Screenshot 01">
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>Bodyrock.fit</h2>
+                                                        <p>A fitness studio and juice bar in Stuart, FL</p>
+                                                    </div>                  
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio six-->
+                                <li class="col m3 s12 mix category-2">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-six">
+                                        <figure class="more">
+                                        <img src="/images/p-6.png" alt="Screenshot 01">
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>Fair Housing Advocates, Inc</h2>
+                                                        <p>Leaders in Fair Housing Act Education and the claims process.</p>
+                                                    </div>                  
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio seven-->
+                                <li class="col m3 s12 mix category-2">
+                                    <a href="project.html" class="sa-view-project-detail" data-action="#project-seven">
+                                        <figure class="more">
+                                        <img src="/images/p-7.png" alt="Screenshot">
+                                            <figcaption>
+                                                <div class="caption-content">
+                                                    <div class="single_image">
+                                                        <h2>Journey of Birth</h2>
+                                                        <p>Your birth, your way.</p>
+                                                    </div>                                  
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- Portfolio eight-->
+                               <!--  <li class="col m3 s12 mix category-4">
+                                    <a href="project.html" class="sa-view-project-detail"  data-action="#project-eight">
+                                        <figure class="more"> 
+                                        <img src="assets/images/p-8.jpg" alt="Screenshot 01">
+                                            <figcaption>
+                                                <div class="caption-content ">
+                                                    <div class="single_image">
+                                                        <h2>Gorgeously Organic</h2>
+                                                        <p>Organic, fresh and clean living. </p>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                <!-- PROJECT DETAILS WILL BE LOADED HERE -->
+                <div class="sa-project-gallery-view" id="project-gallery-view"></div>
+
+                <div class="back-btn col s12">  
+                    <a id="back-button" class="btn btn-info waves-effect" href="#" ><i class="fa fa-long-arrow-left"></i> Go Back </a>
                 </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
+        
+                <!-- =========================================
+                        MARKET PLACE   
+                ==========================================-->
+                    <div class="market-place col m12 s12 z-depth-1 wow fadeIn a3" data-wow-delay="0.3s">
+                        <ul>
+                            <li><a href=""><h3></h3></a></li>
+                            <li><a href=""><h3></h3></a></li>
+                            <li><a href=""><h3></h3></a></li>
+                            <li><a href=""><h3></h3></a></li>
+                            <li><a href=""><h3></h3></a></li>
+                            <li><a href=""><h3></h3></a></li>
+                        </ul>
+                    </div>
+                </div>  
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-            <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Technology</h4>
-                This site was made with Google's material design, an express backend, and a series of gulp extensions for tying things all together.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Learn More</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-            <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--footer mdl-color--white mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-          </section>
-        </div>
-        <div class="mdl-tabs__panel" id="resume">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h4>Features</h4>
-              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
-              </ul>
-              <h5 id="experience">Experience</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
-              <ul>
-                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                <li>Lorem labore proident officia excepteur do.</li>
-              </ul>
-              <div id="timeline" style="height: 180px;"></div>
-              <p>
-                Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
-              </p>
-              <p>
-                Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
-              </p>
-              <p id="education">
-                Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
-              </p>
-              <p>
-                Eu minim fugiat laborum irure veniam Lorem aliqua enim. Aliqua veniam incididunt consequat irure consequat tempor do nisi deserunt. Elit dolore ad quis consectetur sint laborum anim magna do nostrud amet. Ea nulla sit consequat quis qui irure dolor. Sint deserunt excepteur consectetur magna irure. Dolor tempor exercitation dolore pariatur incididunt ut laboris fugiat ipsum sunt veniam aute sunt labore. Non dolore sit nostrud eu ad excepteur cillum eu ex Lorem duis.
-              </p>
-              <p>
-                Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
-              </p>
-              <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-              <p id="lorem4">
-                Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
-              </p>
-              <p id="lorem5">
-                Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
-              </p>
-              <p>
-                Enim ea officia excepteur ad veniam id reprehenderit eiusmod esse mollit consequat. Esse non aute ullamco Lorem aliqua qui dolore irure eiusmod aute aliqua proident labore aliqua. Ipsum voluptate voluptate exercitation laborum deserunt nulla elit aliquip et minim ex veniam. Duis cupidatat aute sunt officia mollit dolor ad elit ad aute labore nostrud duis pariatur. In est sint voluptate consectetur velit ea non labore. Ut duis ea aliqua consequat nulla laboris fugiat aute id culpa proident. Minim eiusmod laboris enim Lorem nisi excepteur mollit voluptate enim labore reprehenderit officia mollit.
-              </p>
-              <p>
-                Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
-              </p>
-            </div>
-          </section>
-        </div>
-        <div class="mdl-tabs__panel" id="projects">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h4>Projects</h4>
-              Here are a list of projects I've worked on recently:
-            </div>
-            <div class="card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                  <h2 class="mdl-card__title-text">Welcome</h2>
+        </section>
+        <!-- =========================================
+                EDUCATION  
+        ==========================================-->
+        <section id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2> <i class="fa fa-graduation-cap"></i>Education</h2>
+                    </div>
+                    
+                    <div class="cd-container" id="ed-timeline">
+                        <div class="cd-timeline-block wow fadeIn a2" data-wow-delay="0.2s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>BS in TECHNOLOGICAL ENTREPRENEURSHIP & MANAGEMENT</h2></a>
+                                <h6>Arizona State University</h6>
+                                <span>Expected Graduation March, 2019 </span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, 
+                                dolorum provident rerum aut hic quasi placeat iure tempora.</p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                        <div class="cd-timeline-block wow fadeIn a3" data-wow-delay="0.3s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>PROGRAM MANAGEMENT LEVEL II CERTIFICATION</h2></a>
+                                <h6>Defense Acquisition University</h6>
+                                <span>12 July 2017 </span>
+                                <p>Structures and guides systems engineering activities. Establishes a risk/opportunity program; structures and conducts technical reviews. Works with contracting personnel. Maintains configuration control. Leads IPTs in support of developing and delivering a weapon system, C2/network-centric system, or space system. Structures incentives tied to desired outcomes for service contracts, prepares plans for mitigating risks, provides contract tracking and oversight</p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                
+                        <div class="cd-timeline-block wow fadeIn a4" data-wow-delay="0.4s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>CREW RESOURSE MANAGEMENT (CRM) INSTRUCTOR COURSE</h2></a>
+                                <h6>Naval Aviation Schools Command</h6>
+                                <span>Spring 2011 </span>
+                                <p>A course designed to create instructors to standardize, implement and manage fleet CRM program. Instructors are able to teach and designate CRM facilitators to perform aircrew annual requalification.</p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                        <div class="cd-timeline-block wow fadeIn a5" data-wow-delay="0.5s">
+                            <div class="cd-timeline-img">
+                            </div> <!-- cd-timeline-img -->
+                            <div class="cd-timeline-content col m5 s12 z-depth-1">
+                                <a href=""><h2>BREWSTER ACADEMY</h2></a>
+                                <span>1999-2002 </span>
+                                <p>An independent, college preparatory school, providing students with the academic, personal, and social skills necessary for success in a university or college, and for life. <strong>Graduated Magna Cum Laude.</strong></p>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                    </div> <!-- cd-timeline -->
+                    
                 </div>
-                <div class="mdl-card__supporting-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris sagittis pellentesque lacus eleifend lacinia...
+            </div>
+        </section>
+        <!-- =========================================
+                BLOG 
+        ==========================================-->
+        <!-- <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2> <i class="fa fa-edit"> </i>Blog</h2>
+                    </div>
+                    <div class="row">
+                        <div class="blog">
+                            <div class="col m4 s12 blog-post wow fadeIn a2" data-wow-delay="0.2s">
+                                <div class="thumbnail z-depth-1 animated">
+                                    <a href="blog-full-post.html"><img src="assets/images/b-1.jpg" alt="" class="responsive-img"></a>                                       
+                                    <div class="blog-details">
+                                        <div class="post-title" id="blog-post-1">
+                                            <a href="blog-full-post.html">
+                                                <h2>Website Design</h2>
+                                                <span>branding, ui-ux, article</span>
+                                            </a>
+                                        </div> 
+                                        <div class="post-details">                                            
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>                           
+                                        </div> 
+                                    </div>              
+                                </div>
+                            </div>
+                            <div class="col m4 s12 blog-post wow fadeIn a3" data-wow-delay="0.3s">
+                                <div class="thumbnail z-depth-1">
+                                    <a href="blog-full-post.html"><img src="assets/images/b-2.jpg" alt="" class="responsive-img"></a>                                        
+                                    <div class="blog-details">
+                                        <div class="post-title" id="blog-post-2">
+                                            <a href="blog-full-post.html">
+                                                <h2>Website Redesign</h2>
+                                                <span>branding, ui-ux, article</span>
+                                            </a>
+                                        </div> 
+                                        <div class="post-details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                        </div> 
+                                    </div>              
+                                </div>
+                            </div>
+                            <div class="col m4 s12 blog-post wow fadeIn a4" data-wow-delay="0.4s">
+                                <div class="thumbnail z-depth-1">
+                                    <a href="blog-full-post.html"><img src="assets/images/b-4.jpg" alt="" class="responsive-img"></a>                                       
+                                    <div class="blog-details">
+                                        <div class="post-title" id="blog-post-3">
+                                            <a href="blog-full-post.html">
+                                                <h2>Music Player Design</h2>
+                                                <span>branding, ui-ux, article</span>
+                                            </a>
+                                        </div> 
+                                        <div class="post-details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>                               
+                                        </div> 
+                                    </div>              
+                                </div>
+                            </div>
+                            <div class="col m4 s12 blog-post wow fadeIn a5" data-wow-delay="0.5s">
+                                <div class="thumbnail z-depth-1">
+                                    <a href="blog-full-post.html"><img src="assets/images/b-3.jpg" alt="" class="responsive-img"></a>                                       
+                                    <div class="blog-details">
+                                        <div class="post-title" id="blog-post-4">
+                                            <a href="blog-full-post.html">
+                                                <h2>Marketing Partner</h2>
+                                                <span>branding, ui-ux, article</span>
+                                            </a>
+                                        </div> 
+                                        <div class="post-details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p> 
+                                        </div> 
+                                    </div>              
+                                </div>
+                            </div>
+                            <div class="col m4 s12 blog-post wow fadeIn a6" data-wow-delay="0.6s">
+                                <div class="thumbnail z-depth-1">
+                                    <a href="blog-full-post.html"><img src="assets/images/b-5.jpg" alt="" class="responsive-img"></a>                                       
+                                    <div class="blog-details">
+                                        <div class="post-title" id="blog-post-6">
+                                            <a href="blog-full-post.html">
+                                                <h2>Marketing Partner</h2>
+                                                <span>branding, ui-ux, article</span>
+                                            </a>
+                                        </div> 
+                                        <div class="post-details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                        </div> 
+                                    </div>              
+                                </div>
+                            </div>
+                            <div class="col m4 s12 blog-post wow fadeIn a7" data-wow-delay="0.7s">
+                                <div class="thumbnail z-depth-1">
+                                    <a href="blog-full-post.html"><img src="assets/images/b-6.jpg" alt="" class="responsive-img"></a>                                       
+                                    <div class="blog-details">
+                                        <div class="post-title" id="blog-post-5">
+                                            <a href="blog-full-post.html">
+                                                <h2>Web development </h2>
+                                                <span>branding, ui-ux, article</span>
+                                            </a>
+                                        </div> 
+                                        <div class="post-details">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.
+                                            Aliquam ornare arcu ac velit ultricies fermentum.</p> 
+                                        </div> 
+                                    </div>              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    Get Started
-                  </a>
+            </div>
+        </section> -->
+        
+        <!-- =========================================
+                  PRICING 
+         ==========================================-->
+         
+        <!-- <section id="pricing-table">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2> <i class="fa  fa-money "></i>Pricing Table </h2>
+                    </div>
+                    <div class="pricing wow fadeIn a3" data-wow-delay="0.3s">
+                        <div class="row">
+                            <div class="plan col m4 s12">
+                                <ul class="thumbnail z-depth-1">
+                                    <li> <strong>START-UP</strong> </li>
+                                    <li> <h3>$299</h3> </li>
+                                    <li><div class="span"> Logo</div></li>
+                                    <li><div class="span"> Domine & Hosting</div></li>
+                                    <li><div class="span"> One Page Landing</div></li>
+                                    <li><div class="span"> Email Marketing</div></li>
+                                    <li><div class="span"> Email Marketing</div></li>
+                                    <li><div class="span"> SEO</div></li>
+                                    <li> <button type="button" class="btn btn-info waves-effect">Order now</button></li>
+                                </ul>
+                            </div>
+                            <div class="plan col m4 s12">
+                                <ul class="thumbnail z-depth-1">
+                                    <li> <strong>SMALL BUSINESS</strong> </li>
+                                    <li> <h3>$499</h3> </li>
+                                    <li><div class="span"> Logo</div></li>
+                                    <li><div class="span"> Domine & Hosting</div></li>
+                                    <li><div class="span"> One Page Landing</div></li>
+                                    <li><div class="span"> Adsence</div></li>
+                                    <li><div class="span"> Email Marketing</div></li>
+                                    <li><div class="span"> SEO</div></li>
+                                    <li><button type="button" class="btn btn-info waves-effect">Order now</button></li>
+                                </ul>
+                            </div>
+                            <div class="plan col m4 s12">
+                                <ul class="thumbnail z-depth-1">
+                                    <li> <strong>ENTERPRISE</strong></li>
+                                    <li> <h3>$799</h3> </li>
+                                    <li><div class="span"> Logo</div></li>
+                                    <li><div class="span"> Domine & Hosting</div></li>
+                                    <li><div class="span"> One Page Landing</div></li>
+                                    <li><div class="span"> One Page Landing</div></li>
+                                    <li><div class="span"> Email Marketing</div></li>
+                                    <li><div class="span"> SEO</div></li>
+                                    <li>  <button type="button" class="btn btn-info waves-effect">Order now</button> </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
                 </div>
-                <div class="mdl-card__menu">
-                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">share</i>
-                  </button>
+            </div> 
+        </section> -->
+        
+        <!-- =========================================
+                CLIENTS
+        ==========================================-->
+        <!-- <section id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2> <i class="fa fa-quote-left"></i>Clients</h2>
+                    </div>
+                    <div class="clients-quates wow fadeIn a3" data-wow-delay="0.3s">
+                        <div class="row">
+                            <div class="quates col m4 s12">
+                                <div class="thumbnail z-depth-1">
+                                    <img src="/images/team1.jpg" alt="">
+                                    <h3>Jhon Doe</h3>
+                                    <span>CEO, Creative Market</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                                    ornare arcu ac velit ultricies fermentum. Aliquam ornare arcu ac velit ultricies fermentum..</p>
+                                </div>
+                            </div>
+                            <div class="quates col m4 s12">
+                                <div class="thumbnail z-depth-1">
+                                    <img src="assets/images/team2.jpg" alt="">
+                                    <h3>Jhon Adnan</h3>
+                                    <span>CEO, Lorem Ipsum</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aliquam ornare arcu ac velit ultricies fermentum.Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                </div>
+                            </div>
+                            <div class="quates col m4 s12">
+                                <div class="thumbnail z-depth-1">
+                                    <img src="assets/images/team3.jpg" alt="">
+                                    <h3>Mark Anwar</h3>
+                                    <span>CEO, Bdpark Market</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aliquam ornare arcu ac velit ultricies fermentum. Aliquam ornare arcu ac velit ultricies fermentum.</p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="clear"></div> -->
+                    <!-- =========================================
+                            CLIENTS LOGO   
+                    ==========================================-->
+                    <!-- <div class="clients-logo z-depth-1">
+                        <div class="row">
+                            <ul class="wow fadeIn a4" data-wow-delay="0.4s">
+                                <li class="col m2 s6"><a href="" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Bodyrock.fit"><img src="/images/client1.png" alt="" class="responsive-img"></a></li>
+                                <li class="col m2 s6"><a href=""><img src="assets/images/client2.png" alt="" class="responsive-img"></a></li>
+                                <li class="col m2 s6"><a href=""><img src="assets/images/client3.png" alt="" class="responsive-img"></a></li>
+                                <li class="col m2 s6"><a href=""><img src="assets/images/client4.png" alt="" class="responsive-img"></a></li>
+                                <li class="col m2 s6"><a href=""><img src="assets/images/client6.png" alt="" class="responsive-img"></a></li>
+                                <li class="col m2 s6"><a href=""><img src="assets/images/client7.png" alt="" class="responsive-img"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div> 
+        </section> -->
+        <!-- =========================================
+                CONTACT  
+        ==========================================-->
+        <section id="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
+                        <h2> <i class="fa fa-send"></i>Contact</h2>
+                    </div>
+                    <div class="contact-form z-depth-1" id="contact">   
+                        <div class="row">                                   
+                            <!-- <form id="contactForm" data-toggle="validator">
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="input-field col m6 s12 wow fadeIn a2" data-wow-delay="0.2s">
+                                    <label for="name" class="h4">Full Name *</label>
+                                    <input type="text" class="form-control validate" id="name" required data-error="NEW ERROR MESSAGE">
+                                </div>
+                                <div class="input-field col m6 s12 wow fadeIn a4" data-wow-delay="0.4s">
+                                    <label for="email" class="h4">Email *</label>
+                                    <input type="email" class="form-control validate" id="email"  required>                
+                                </div>
+                                <div class="input-field col m6 s12 wow fadeIn a3" data-wow-delay="0.3s">
+                                    <label for="last_name" class="h4">Subject *</label>
+                                    <input type="text" class="form-control validate" id="last_name" required>
+                                </div> 
+                                <div class="input-field col m6 s12 wow fadeIn a5" data-wow-delay="0.5s" >
+                                    <select>
+                                      <option value="">Choose your Budget</option>
+                                      <option value="1">$10000-$20000</option>
+                                      <option value="2">$50000-$100000</option>
+                                      <option value="3">$50000-$1000000</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col m12 s12 wow fadeIn a6" data-wow-delay="0.6s">
+                                    <label for="message" class="h4 ">Message *</label>
+                                    <textarea id="message" class="form-control materialize-textarea validate" required></textarea>           
+                                </div>
+                                <button type="submit" id="form-submit" class="btn btn-success waves-effect wow fadeIn a7" data-wow-delay="0.7s">Submit</button>
+                                                             
+                            </form>   --> 
+                            <div class="typeform-widget" data-url="https://kdventures.typeform.com/to/NWzOqD" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/forms/contact-form-template/?utm_campaign=NWzOqD&amp;utm_source=typeform.com-396142-Pro&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-contactform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>                                  
+                        </div> 
+                    </div>
+                    
+                    <!-- =========================================
+                            INTEREST  
+                    ==========================================-->
+                    
+                    <div class="interests col s12 m12 l12 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row">
+                            <ul class="z-depth-1"> <!-- interetsr icon start -->
+                                <li><a href="https://www.facebook.com/darinlevesque"><i class="fa fa-facebook-official tooltipped col m2 s6" data-position="top" data-delay="50" data-tooltip="Darin's Facebook"></i></a></li>
+                                <li><a href="https://twitter.com/darinlevesque"><i class="fa fa-twitter tooltipped col m2 s6" data-position="top" data-delay="50" data-tooltip="Darin's Twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/darinlevesque/"><i class="fa fa-linkedin tooltipped col m2 s6" data-position="top" data-delay="50" data-tooltip="Darin's linkedin"></i></a></li>
+                                <!-- <li><i class="fa fa-whatsapp tooltipped col m2 s6" data-position="top" data-delay="50" data-tooltip="Whatsapp"></i></li>
+                                <li><i class="fa fa-youtube tooltipped col m2 s6" data-position="top" data-delay="50" data-tooltip="Youtube"></i></li>
+                                <li><i class="fa fa-vimeo tooltipped col m2 s6" data-position="top" data-delay="50" data-tooltip="Vimeo"></i></li> -->
+                            </ul> <!-- interetsr icon end -->
+                        </div>
+                    </div>  
+                </div>
+            </div> 
+        </section>
+        <footer class="page-footer">
+          <!-- <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
               </div>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Bodyrock.fit</h4>
-                A local fitness studio in Stuart, Fl asked me to revamp their website. I rebuilt it with Node.js, express, grunt and ultimately decreased their page load time to the best possible performance I could.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://bodyrock.fit" class="mdl-button">Check it out</a>
-              </div>
-            </div>
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--grey-100 mdl-color-text--black">
-              <img src="/images/bodyrock-128x128.png" />
-            </header>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-            <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white-100 mdl-color-text--black">
-              <iframe width="212" height="212" src="https://www.youtube.com/embed/Z7juF7EG9WY" frameborder="0" allowfullscreen></iframe>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>"We Must be Crazy"</h4>
-                My wife and I made a video announcing that we're expecting this fall. I was a ton of work, but very fun to produce the audio, video and special effects.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Behind the scenes</a>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-            <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-        </div>
-        </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
+          </div> -->
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright Darin Levesque
+            <!-- <a class="grey-text text-lighten-4 right modal-trigger" href="#modal1">How was this made?</a> -->
+            <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
             </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="http://darinlevesque.com">Darin Levesque</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-            </ul>
           </div>
         </footer>
-      </main>
+
+  <!-- Modal Structure -->
+  <!-- <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
     </div>
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div> -->
+          
+                 
+        <!-- SCRIPTS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>  
+    <script src="/scripts/masonry.pkgd.js"></script>
+    <script src="/scripts/jquery.fancybox.pack.js"></script>
+    <script src="/scripts/validator.min.js"></script>
+    <script src="/scripts/modernizr.js"></script>
+    <!-- <script src="/scripts/jquery.modal.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="/scripts/jquery.sticky.js"></script>
+    <script src="/scripts/jquery.nav.js"></script>
+    <!-- wow js-->
+    <script src="/scripts/wow.min.js"></script>
+    <script src="/scripts/init.js"></script>
+    
+      <!-- <script src="https://code.getmdl.io/1.2.1/material.min.js"></script> -->
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['timeline']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var container = document.getElementById('timeline');
-        var chart = new google.visualization.Timeline(container);
-        var dataTable = new google.visualization.DataTable();
-
-        dataTable.addColumn({ type: 'string', id: 'President' });
-        dataTable.addColumn({ type: 'date', id: 'Start' });
-        dataTable.addColumn({ type: 'date', id: 'End' });
-        dataTable.addRows([
-          [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
-          [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
-          [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]]);
-
-        chart.draw(dataTable);
-      }
-    </script>
     <!-- endbuild -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window, document, 'script','//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-54308414-1', 'auto');
     ga('send', 'pageview');
     </script>
     <!-- Built with love using Web Starter Kit -->
   </body>
-</html>
+  </html>
