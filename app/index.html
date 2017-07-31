@@ -899,5 +899,16 @@
     ga('send', 'pageview');
     </script>
     <!-- Built with love using Web Starter Kit -->
+    <script>
+        $( document ).ready(function() {
+            "use strict";
+                $('#example-one').onePageNav({
+              changeHash: true,
+              scrollSpeed: 750,
+              scrollThreshold: 0.5,
+              filter: ':not(.external)'
+            });
+        });
+    </script>
   </body>
   </html>

@@ -45,12 +45,12 @@
         
     // Nav
         
-    $('#example-one').onePageNav({
-      changeHash: true,
-      scrollSpeed: 750,
-      scrollThreshold: 0.5,
-      filter: ':not(.external)'
-    });
+    // $('#example-one').onePageNav({
+    //   changeHash: true,
+    //   scrollSpeed: 750,
+    //   scrollThreshold: 0.5,
+    //   filter: ':not(.external)'
+    // });
         
     $('a[href^="#"].inpage-scroll, .inpage-scroll a[href^="#"]').on('click', function(e) {
         e.preventDefault();
