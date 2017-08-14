@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="">
-  <head>
+  <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="This is the resume of Darin Levesque, a talented guy who thrives in fast-paced environments">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Resume of Darin Levesque</title>
+    <title itemprop='name'>Digital Resume of Darin Levesque</title>
+    <link rel="canonical" href="http://www.darinlevesque.com" itemprop="url">
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
     <!-- Web Application Manifest -->
     <link rel="manifest" href="/manifest.json">
+    <link rel="amphtml" href="/index-amp.html">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Darin Levesque dot com">
@@ -76,6 +78,7 @@
         <link rel="stylesheet" href="/styles/color/orange.css" title="orange"> -->
     <!-- <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/style.css"> -->
+
   </head>
   <body>
       <!-- =========================================
@@ -149,7 +152,7 @@
                                 <h2 itemprop="name">Darin Levesque</h2>
                                 <span>Test Resource Manager</span>
                                 <p>Hello, I'm Darin Levesque. I work for the CH-53K Developmental Helicopter program as a <span itemprop="jobTitle">Test Resource Manager</span>. </p>
-                                <a href="Resume.docx" class="btn waves-effect">Download CV</a>
+                                <a href="/Resume.docx" class="btn waves-effect" target=”_blank” onclick=”_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);”>Download CV</a>
                                 <a class="typeform-share btn btn-success waves-effect" href="https://kdventures.typeform.com/to/NWzOqD" data-mode="popup" target="_blank">Contact</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
                             </div>
                         </div>
@@ -915,6 +918,18 @@
               filter: ':not(.external)'
             });
         });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Darin Levesque",
+      "url": "http://www.darinlevesque.com",
+      "sameAs": [
+        "https://www.facebook.com/darinlevesque",
+        "https://www.linkedin.com/in/darinlevesque/"
+      ]
+    }
     </script>
   </body>
   </html>
