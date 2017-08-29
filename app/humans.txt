@@ -3,11 +3,11 @@
 
 # TEAM
 
-  Darin Levesque -- The Subject -- @darinlevesque
+  Darin Levesque -- Test Resource Manager -- @darinlevesque
 
 # THANKS
 
-  <name>
+  Web Starter kit folks
 
 # TECHNOLOGY COLOPHON
 
