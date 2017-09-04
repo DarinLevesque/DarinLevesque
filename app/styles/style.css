@@ -190,7 +190,7 @@ h1 {
 #header-top .top-contact {
   margin: 20px;
   color: #000;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 #header-top .top-contact span {
   float: right;
