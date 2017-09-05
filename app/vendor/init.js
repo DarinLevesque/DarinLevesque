@@ -45,26 +45,26 @@
         
     // Nav
         
-    // $('#example-one').onePageNav({
-    //   changeHash: true,
-    //   scrollSpeed: 750,
-    //   scrollThreshold: 0.5,
-    //   filter: ':not(.external)'
-    // });
+    $('#example-one').onePageNav({
+      changeHash: true,
+      scrollSpeed: 750,
+      scrollThreshold: 0.5,
+      filter: ':not(.external)'
+    });
         
-    // $('a[href^="#"].inpage-scroll, .inpage-scroll a[href^="#"]').on('click', function(e) {
-    //     e.preventDefault();
+    $('a[href^="#"].inpage-scroll, .inpage-scroll a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
 
-    //     var target = this.hash,
-    //         $target = $(target);
-    //     $('.main-navigation a[href="' + target + '"]').addClass('active');
-    //     $('.main-navigation a:not([href="' + target + '"])').removeClass('active');
-    //     $('html, body').stop().animate({
-    //         'scrollTop': ($target.offset()) ? $target.offset().top : 0
-    //     }, 900, 'swing', function() {
-    //         window.location.hash = target;
-    //     });
-    // });
+        var target = this.hash,
+            $target = $(target);
+        $('.main-navigation a[href="' + target + '"]').addClass('active');
+        $('.main-navigation a:not([href="' + target + '"])').removeClass('active');
+        $('html, body').stop().animate({
+            'scrollTop': ($target.offset()) ? $target.offset().top : 0
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
     
             
     //Conatct

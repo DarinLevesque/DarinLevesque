@@ -116,7 +116,7 @@ gulp.task('scripts', () =>
       './app/vendor/validator.min.js',
       './app/vendor/modernizr.js',
       './app/vendor/jquery.sticky.js',
-      '.app/vendor/jquery.nav.js',
+      './app/vendor/jquery.nav.js',
       './app/vendor/wow.min.js',
       './app/vendor/init.js'
       // Other scripts
